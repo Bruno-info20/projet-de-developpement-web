@@ -6,12 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <link rel="stylesheet" href="css/base.css"> -->
     <title>Document</title>
+    <style>
+        
+        body {
+            background-color: rgb(247, 197, 131);
+        }
+
+        #image {
+            background-image: url('images/rayon.jpg');
+            height: 505px;
+            width: 966px;
+            border-radius: 100px;
+            -moz-border-radius: 100px;
+            -webkit-border-radius: 100px;
+            position: absolute;
+            left: 300px;
+        }
+
+        #image:hover {
+            border-radius: 200px;
+            -moz-border-radius: 200px;
+            -webkit-border-radius: 200px;
+        }
+
+    </style>
 </head>
 
 <body>
     <marquee>
         <h1 style="color: red">Message</h1>
     </marquee>
+    <div id="image"></div>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 
