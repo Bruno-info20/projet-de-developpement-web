@@ -45,6 +45,11 @@ $('#bouton3').on('click', function () {
 //Code en javascript normal pour supprimer la dernière ligne du tableau avec le bouton  
 document.getElementById('bouton3').addEventListener('click', function () {
     document.getElementsByTagName('tbody')[0].lastElementChild.remove();
-    //
 });
 
+document.getElementById('bouton4').addEventListener('click', function () {
+    const taille = document.getElementsByTagName('tr').length-1;
+    for(i = taille; i > 0 ; i--) {
+        document.querySelectorAll('tr')[i].lastElementChild.innerHTML = "";    
+    }
+});
