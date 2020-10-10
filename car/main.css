@@ -1,0 +1,29 @@
+#road {
+    height: 150px;
+    background: #CCC;
+    border-bottom: 5px solid;
+    border-top: 5px solid;
+    display: flex;
+    /* align-items: center; supprimer le height servant à rien et mettre width: 100% */ 
+    
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+#line {
+    height: 10px;
+    border-top: 5px dashed #FFF;
+    /* width: 100%; */
+}
+
+#car{
+    
+    height: 60px;
+    width: 100px;
+    position: absolute;
+    background: url(car.png) no-repeat;
+    background-size: 100%;
+    top: 164px;
+
+}

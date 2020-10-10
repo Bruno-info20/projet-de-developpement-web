@@ -24,7 +24,16 @@ if (myButton != null) { //si l'élément du dom existe (si pas il renvoie null)'
     })
 }
 
-let display = 1;
+//Bouton "Cacher Tableau"
+document.getElementById('bouton2').addEventListener('click', function () {
+    let table = document.getElementsByTagName('table')[0];
+    if(table.style.display === 'none') {
+        table.style.display = 'table';
+    } else {
+        table.style.display = 'none';
+    }
+});
+/* let display = 1;
 document.getElementById('bouton2').addEventListener('click', function () {
     if (display === 1) {
         document.getElementsByTagName('table')[0].style = 'display: none;';
@@ -33,9 +42,13 @@ document.getElementById('bouton2').addEventListener('click', function () {
         document.getElementsByTagName('table')[0].style = 'display: display;';
         display = 1;
     }
-});
+}); 
+
+//Prof :
+*/
 
 
+//Bouton "Supprimer Ligne"
 /* 
 //Code en JQuery pour supprimer la dernière ligne du tableau avec le bouton 
 $('#bouton3').on('click', function () {
@@ -47,9 +60,10 @@ document.getElementById('bouton3').addEventListener('click', function () {
     document.getElementsByTagName('tbody')[0].lastElementChild.remove();
 });
 
+//Bouton "Supprimer Naissance"
 document.getElementById('bouton4').addEventListener('click', function () {
-    const taille = document.getElementsByTagName('tr').length-1;
-    for(i = taille; i > 0 ; i--) {
+    const taille = document.getElementsByTagName('tr').length;
+    for(i = 1; i < taille ; i++) {
         document.querySelectorAll('tr')[i].lastElementChild.innerHTML = "";    
     }
 });
