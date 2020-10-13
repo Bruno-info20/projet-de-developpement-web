@@ -39,3 +39,21 @@ document.addEventListener('keydown', function(touche) {
             break;
     }
 });
+
+
+/* Solution Hugo:
+let x = 0;
+let y = 0;
+document.addEventListener('keydown', function(event){
+    if(event.code == 'ArrowRight'){
+        x += 10;
+    } else if(event.code == 'ArrowLeft') {
+        x -= 10;
+    } else if(event.code == 'ArrowDown') {
+        y += 10;
+    } else if(event.code == 'ArrowUp') {
+        y -= 10;
+    }
+    car.style.transform = `translate(${x}px, ${y}px)`;
+});
+ */
