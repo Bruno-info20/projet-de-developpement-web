@@ -31,9 +31,11 @@ document.addEventListener('keydown', function(touche) {
             break;
         case 'ArrowRight':
             car.style.left = valeurLeft++ +'px';
+            /* car.style.left = (valeurLeft = valeurLeft+10) +'px'; */
             break;
         case 'ArrowLeft':
             car.style.left = valeurLeft-- +'px';
+            /* car.style.left = (valeurLeft = valeurLeft-10) +'px'; */
             break;
     }
 });
